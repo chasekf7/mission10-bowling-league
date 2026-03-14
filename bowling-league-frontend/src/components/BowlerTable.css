@@ -1,0 +1,80 @@
+.table-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  overflow-x: auto;
+}
+
+.bowler-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.bowler-table thead {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.bowler-table th {
+  padding: 1rem;
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.bowler-table tbody tr {
+  border-bottom: 1px solid #e5e7eb;
+  transition: background-color 0.2s ease;
+}
+
+.bowler-table tbody tr:hover {
+  background-color: #f9fafb;
+}
+
+.bowler-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.bowler-table td {
+  padding: 1rem;
+  color: #374151;
+  font-size: 0.95rem;
+}
+
+.loading,
+.error,
+.no-data {
+  text-align: center;
+  padding: 3rem;
+  font-size: 1.2rem;
+  color: #6b7280;
+}
+
+.error {
+  color: #dc2626;
+  background-color: #fee2e2;
+  border-radius: 8px;
+  margin: 0 1rem;
+}
+
+.loading {
+  color: #667eea;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .bowler-table {
+    font-size: 0.85rem;
+  }
+
+  .bowler-table th,
+  .bowler-table td {
+    padding: 0.75rem 0.5rem;
+  }
+}
